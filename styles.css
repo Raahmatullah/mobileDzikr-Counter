@@ -1,11 +1,21 @@
 body{
+    height:100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+  height: 100vh;             
+  margin: 0;
+  display: flex;  
+  flex-direction: column;          
+  justify-content: center;    
+  align-items: center;       
+  background-color: #f0f0f0; 
 }
 h1 {
-    width: 70vw;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
     color: #333333;
 }
 .number {
@@ -18,47 +28,73 @@ h1 {
     font-size: xx-large;
 }
 .dzikir-container {
+    height: 400px;
     width: 80vw;
-    padding: 1px 12px;
     max-width: 340px;
-    margin: 10px auto;
+    margin:  0;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    padding: 10px 10px 0 10px;
+    border: 3px solid #cfcaca;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 10px 0 10px;
-    border: 3px solid #ddd;
-    border-radius: 8px;
-}
-.incrementBtn {
-    margin-top: 50px;
-    padding: 10px 20px;
-    max-width: 300px;
-    width: 21em;
-    font-size: larger;
     text-align: center;
-    padding: 2em;
-    border-radius: 8px;
+    justify-content: space-between;
 }
-.childBtn {
-    flex: 1 1 40%;
-    margin: 5px;
-    padding: 0.2em;
-    font-size: 1.2em;
+#targetInput {
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.toast {
+  visibility: hidden;
+  min-width: 200px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 12px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: visibility 0.3s, opacity 0.3s;
+}
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.incrementBtn { 
+    font-size: 5rem; 
+    border-radius: 8px; 
+    width: 100%; 
+    max-width: 280px; 
+}
+.childBtn { 
+    padding: 12px 24px; 
+    font-size: 1rem; 
+    border-radius: 8px; 
+    width: 100%; 
+    max-width: 280px; 
 }
 details {
-    width: 80vw ;
+    width: 90% ;
     max-width: 340px;
-    margin: 12px 0;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 8px 12px;
     background: #fafafa;
-    display: block;
-    text-align: center;
-    margin: auto auto;
 } 
 summary { 
     cursor: pointer;
@@ -81,7 +117,4 @@ details[open] summary::after {
 .content {  
     color: #333;
     line-height: 1.6;
-}
-#bottom{
-    margin-bottom: 50px;
 }

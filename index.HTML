@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <script src="myscripts.js"></script> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dzikr!</title>
@@ -9,11 +8,12 @@
 </head>
 <body>
     <div class="dzikir-container">
-        <h1>Subhānallāh</h1>
-        <div>
-            <p class="number"></p>
-        </div>
-        <button class="incrementBtn">Increment Dzikr</button>
+        <h1>Tasbih</h1>
+        <div id="toast" class="toast">🎯 Target Achieved!</div>
+
+        <button class="incrementBtn" id="incrementBtnEl">0</button>
+        <button class="childBtn" id="resetBtnEl">Reset</button>
+        <input type="number"  id="targetInput" placeholder="Input your target">
 
         <p id="btnEl"></p>
         <p id="counterEl"></p>
@@ -21,53 +21,9 @@
     <details>
         <summary>FAQ</summary> 
         <div class="content"> 
-            <p>"Suatu hari Rasulullah ditanya apakah ucapan yang paling unggul? Rasulullah menjawab:‘Yang dipilih Allah SWT terhadap para malaikat-Nya dan hamba-Nya adalah ucapan: Subhanallahi wa bihamdihi."<br> (HR Muslim)</p> 
+            <p>"Dari Abu Hurairah, dia berkata, “Rasulullah shallallahu ‘alaihi wasallam telah bersabda: ‘Sesungguhnya membaca “subhanallah walhamdulillah wa laa ilaha illallah wallahu akbar (Maha Suci Allah, segala puji bagi Allah, tiada sesembahan yang berhak disembah selain Allah, dan Allah Maha Besar)” adalah lebih aku cintai daripada segala sesuatu yang terkena sinar matahari.” (HR. Muslim no. 2695). Al Munawi rahimahullah mengatakan, “Segala sesuatu yang dikatakan antara langit dan bumi, atau dikatakan lebih baik dari sesuatu yang terkena sinar matahari atau tenggelamnya, ini adalah ungkapan yang menggambarkan dunia dan seisinya.”[1] Dari sini menunjukkan bahwa keempat kalimat tersebut lebih baik daripada dunia seisinya.</p> 
         </div> 
     </details>
-    <div class="dzikir-container">
-        <h1>Alhamdulillāh</h1>
-        <div>
-            <p class="number"></p>
-        </div>
-        <button class="incrementBtn">Increment Dzikr</button>
-        <p id="btnEl"></p>
-        <p id="counterEl"></p>
-    </div>
-    <details>
-        <summary>FAQ</summary> 
-        <div class="content"> 
-            <p>Nabi Muhammad ﷺ bersabda:<br> "Perbanyaklah kalian membaca Alhamdutillah, karena sesungguhnya bacaan Alhamdulillah itu mempunyai dua mata dan dua sayap, yang selalu berdoa di dalam surga dan memohon ampunan bagi pembacanya sampai hari kiamat” <br>(HR imam Ad-Dailimi)</p> 
-        </div> 
-    </details>
-    <div class="dzikir-container">
-        <h1>Lā ilāha illallāh</h1>
-        <div>
-            <p class="number"></p>
-        </div>
-        <button class="incrementBtn">Increment Dzikr</button>
-        <p id="btnEl"></p>
-        <p id="counterEl"></p>
-    </div>
-    <details>
-        <summary>FAQ</summary> 
-        <div class="content"> 
-            <p>Nabi Muhammad ﷺ bersabda,”Barangsiapa yang akhir perkataannya sebelum meninggal dunia adalah ‘lailaha illallah’, maka dia akan masuk surga”<br> (HR. Abu Daud. Dikatakan shohih oleh Syaikh Al Albani dalam Misykatul Mashobih no. 1621)</p> 
-        </div> 
-    </details>
-    <div class="dzikir-container">
-        <h1>Allāhu Akbar</h1>
-        <p class="number"></p>
-        <button class="incrementBtn">Increment Dzikr</button>
-        <p id="btnEl"></p>
-        <p id="counterEl"></p>
-    </div>
-    <details>
-        <summary >FAQ</summary> 
-        <div class="content"> 
-            <p>Dari ‘Abdullah bin ‘Amr, Rasulullah ﷺ bersabda <br> “Tidaklah seorang di muka bumi ini mengucapkan: Laa ilaha illallah, wallahu akbar, subhanallah, wal hamdulillah, wa laa hawla wa laa quwwata illa billah, melainkan dosa-dosanya akan dihapus walaupun sebanyak buih di lautan.”<br> (HR. Ahmad 2/158)</p> 
-        </div> 
-    </details>
-    
-    
+    <script src="kode.js"></script>
 </body>
 </html>

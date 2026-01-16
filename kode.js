@@ -32,12 +32,30 @@ function showToast(message) {
     toast.classList.remove("show");
   }, 3000);
 }
-// dzikir input
+
 addDzikirBtn.addEventListener("click",function(){
-    const cards = document.createElement("div");
+    if(dzikirInput.value===""){
+        dzkrEl.classList.add("shake");
+    }else if(counter===0){
+        inputEL.classList.add("shake");
+    }   //else if(clicked===true){
+         //dzkrEl.classList.remove("shake");}
+         
+        //next project , fixing the clicked issue
+        //make sure the true condition works
+        // clicked = true;
+        
+    
+    else{
+        dzkrEl.classList.remove("shake");
+        const cards = document.createElement("div");
     cards.classList.add("cards");
     cards.textContent = `${dzikirInput.value} ${counter}`;
-    
     document.getElementById("dzikirContainer").appendChild(cards);
     cards.scrollIntoView({ behavior: "smooth", inline: "end" });
+    counter=0;
+    inputEL.textContent=counter;
+    dzkrEl.value="";
+    }
+    
 });

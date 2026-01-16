@@ -28,7 +28,7 @@ h1 {
     font-size: xx-large;
 }
 .dzikir-container {
-    height: 400px;
+    
     width: 80vw;
     max-width: 340px;
     margin:  0;
@@ -44,7 +44,8 @@ h1 {
     text-align: center;
     justify-content: space-between;
 }
-#targetInput {
+input {
+    margin: 1em 1em;
     font-size: 1rem;
     padding: 8px;
     border-radius: 8px;
@@ -74,12 +75,16 @@ h1 {
   visibility: visible;
   opacity: 1;
 }
-
 .incrementBtn { 
     font-size: 5rem; 
     border-radius: 8px; 
     width: 100%; 
     max-width: 280px; 
+    
+}
+.incrementBtn:active {
+    transform: scale(0.996);
+
 }
 .childBtn { 
     padding: 12px 24px; 
@@ -91,16 +96,16 @@ h1 {
 details {
     width: 90% ;
     max-width: 340px;
-    border: 1px solid #ddd;
+    border: 1px solid #bdc3c7;
     border-radius: 8px;
     padding: 8px 12px;
-    background: #fafafa;
+    background: #ecf0f1;
 } 
 summary { 
     cursor: pointer;
     font-weight: 600;
     list-style: none;
-/* hilangkan marker default */ 
+    color: #2c3e50;
 }
 /* ganti marker default dengan ikon custom */
 summary::marker {
@@ -112,9 +117,38 @@ summary::after {
     transition: transform 0.2s ease;
 } 
 details[open] summary::after { 
-    transform: rotate(180deg);
+     transform: rotate(180deg);
 } 
-.content {  
-    color: #333;
-    line-height: 1.6;
+
+#dzikirContainer {
+    overflow: hidden;
+   scrollbar-width: none;
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; 
+    border-radius: 20px;
+    scroll-snap-type: row reverse;
+    scroll-snap-align: end;
+    
+}
+
+
+.cards {
+  display: flex;
+  word-wrap: break-word;
+  gap: 20px;
+  width: min-content;
+    height: 100%;
+  background: lightblue;
+  text-align: center;
+    padding: 10px;
+  
+  scroll-snap-align: start; /* tiap card jadi titik snap */
+}
+.babu {
+    font-weight: bold;
+    font-size: large;
 }

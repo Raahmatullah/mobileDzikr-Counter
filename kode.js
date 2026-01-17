@@ -4,8 +4,14 @@ const dzkrEl = document.getElementById("dzikirInput");
 const addDzikirBtn = document.getElementById("addDzikirBtn");
 //increment button
 let counter=0;
+let clicked= false;
 inputEL.addEventListener("click", function() {
-    
+    clicked = true;
+    if (clicked===true){
+        inputEL.classList.remove("shake");
+    }else if (dzkrEl.value>=targetInputEL.value){
+        add
+    }
     counter += 1
    inputEL.textContent=counter
 });
@@ -34,19 +40,12 @@ function showToast(message) {
 }
 
 addDzikirBtn.addEventListener("click",function(){
+
     if(dzikirInput.value===""){
         dzkrEl.classList.add("shake");
     }else if(counter===0){
         inputEL.classList.add("shake");
-    }   //else if(clicked===true){
-         //dzkrEl.classList.remove("shake");}
-         
-        //next project , fixing the clicked issue
-        //make sure the true condition works
-        // clicked = true;
-        
-    
-    else{
+    }else{
         dzkrEl.classList.remove("shake");
         const cards = document.createElement("div");
     cards.classList.add("cards");

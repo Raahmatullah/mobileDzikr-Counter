@@ -49,7 +49,7 @@ addDzikirBtn.addEventListener("click",function(){
         dzkrEl.classList.remove("shake");
         const cards = document.createElement("div");
     cards.classList.add("cards");
-    cards.textContent = `${dzikirInput.value} ${counter}`;
+    cards.textContent = `${dzikirInput.value}\n${counter}`;
     document.getElementById("dzikirContainer").appendChild(cards);
     cards.scrollIntoView({ behavior: "smooth", inline: "end" });
     counter=0;

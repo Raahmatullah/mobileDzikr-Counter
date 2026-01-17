@@ -156,6 +156,7 @@ details[open] summary::after {
     text-align: center;
     padding: 10px;
     scroll-snap-align: start;
+    white-space: pre-line;
 }
 /* bikin animasi getar */
 @keyframes shake {

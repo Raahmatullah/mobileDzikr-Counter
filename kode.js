@@ -39,7 +39,7 @@ function showToast(message) {
   }, 3000);
 }
 
-addDzikirBtn.addEventListener("click",function(){
+const globalscope = function(){
 
     if(dzikirInput.value===""){
         dzkrEl.classList.add("shake");
@@ -57,4 +57,6 @@ addDzikirBtn.addEventListener("click",function(){
     dzkrEl.value="";
     }
     
-});
+}
+
+addDzikirBtn.addEventListener("click", globalscope);

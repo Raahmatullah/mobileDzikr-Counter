@@ -6,14 +6,21 @@ const addDzikirBtn = document.getElementById("addDzikirBtn");
 let counter=0;
 let clicked= false;
 inputEL.addEventListener("click", function() {
-    clicked = true;
-    if (clicked===true){
-        inputEL.classList.remove("shake");
-    }else if (dzkrEl.value>=targetInputEL.value){
-        add
-    }
+ clicked = true;
     counter += 1
    inputEL.textContent=counter
+    if (clicked){
+        inputEL.classList.remove("shake");
+         if (counter == targetInputEL.value){
+        
+        if (dzkrEl.value===""){
+            dzkrEl.classList.add("shake");
+        }else{
+            globalscope();
+        }
+         }
+    }
+    
 });
 //reset button
 const resetEL = document.getElementById("resetBtnEl");

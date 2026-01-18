@@ -10,11 +10,12 @@
     <div class="dzikir-container">
         <h1>Tasbih</h1>
         <div id="toast" class="toast">🎯 Target Achieved!</div>
-        <input type="text" id="dzikirInput" placeholder="Enter dzikr name">
+        <input type="text" id="dzikirInput" placeholder="Enter dzikr name" required>
         <button class="childBtn" id="addDzikirBtn">Add</button>
         <button  id="incrementBtnEl">0</button>
         <button class="childBtn" id="resetBtnEl">Reset</button>
-        <input type="number"  id="targetInput" placeholder="Input your target">
+        <input type="number"  id="targetInput" placeholder="Input your target" min="15"
+                    max="1200">
         <p>Your progress history</p>
         <div id="dzikirContainer"></div>
         <p id="btnEl"></p>

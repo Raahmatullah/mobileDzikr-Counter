@@ -10,7 +10,8 @@
     <div class="dzikir-container">
         <h1>Tasbih</h1>
         <div id="toast" class="toast">🎯 Target Achieved!</div>
-        <input type="text" id="dzikirInput" placeholder="Enter dzikr name" required>
+        <input type="text" id="dzikirInput" placeholder="Enter dzikr name" minlength="2"
+                    maxlength="7" pattern="[a-zA-Z]+" required>
         <button class="childBtn" id="addDzikirBtn">Add</button>
         <button  id="incrementBtnEl">0</button>
         <button class="childBtn" id="resetBtnEl">Reset</button>

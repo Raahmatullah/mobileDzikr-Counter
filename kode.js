@@ -1,10 +1,12 @@
-const inputEL = document.getElementById("incrementBtnEl");
-const targetInputEL = document.getElementById("targetInput");
-const dzkrEl = document.getElementById("dzikirInput");
-const addDzikirBtn = document.getElementById("addDzikirBtn");
-//increment button
+const inputEL = document.getElementById("incrementBtnEl");//click
+const targetInputEL = document.getElementById("targetInput"); //target
+const dzkrEl = document.getElementById("dzikirInput"); //naming
+const addDzikirBtn = document.getElementById("addDzikirBtn");//add
+
+
 let counter=0;
 let clicked= false;
+//click button rules
 inputEL.addEventListener("click", function() {
  clicked = true;
     counter += 1
@@ -12,11 +14,10 @@ inputEL.addEventListener("click", function() {
     if (clicked){
         inputEL.classList.remove("shake");
          if (counter == targetInputEL.value){
-        
-        if (dzkrEl.value===""){
-            dzkrEl.classList.add("shake");
-        }else{
-            globalscope();
+            if (dzkrEl.value===""){
+                dzkrEl.classList.add("shake");
+                    }else{
+                    globalscope();
         }
          }
     }
@@ -28,7 +29,7 @@ resetEL.addEventListener("click", function() {
     counter = 0;
     inputEL.textContent = counter;
 });
-// target input
+// target input ruling 
 inputEL.addEventListener("click", function() {
     const target = parseInt(targetInputEL.value, 10); // ubah ke number
     if (!isNaN(target) && counter > target) {

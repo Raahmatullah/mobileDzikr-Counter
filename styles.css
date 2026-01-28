@@ -89,12 +89,8 @@ input {
     height: 170px;
     max-width: 280px; 
     background-color: transparent;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    position: fixed;
-    top: 50px;
+    position: relative;
+    top: 20px;
     border: 3px solid #2563eb;
     margin: auto;
    
@@ -119,7 +115,7 @@ input {
     background-color: #ef4444; 
     color: white; 
     border: none; 
-    margin-top: 150px;
+    margin-top: 50px;
 }
 details {
     width: 90% ;
@@ -154,13 +150,12 @@ details[open] summary::after {
 #dzikirContainer {
     overflow: hidden;
      scrollbar-width: none;
-    margin-top: 20px;
     border: 2px solid #dbeafe;
     width: 100%;
     display: flex;
     gap: 10px;
     overflow-x: auto; 
-    border-radius: 20px;
+    border-radius: 15px;
     scroll-snap-type: row reverse;
     scroll-snap-align: end; 
 }

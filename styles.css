@@ -83,8 +83,8 @@ input {
 
 #incrementBtnEl { 
     font-size: 5rem; 
-    border-radius: 50%;
     width: 100%; 
+    height: 170px;
     max-width: 280px; 
     background-color: transparent;
     right: 0;
@@ -93,7 +93,7 @@ input {
     bottom: 0;
     position: fixed;
     top: 50px;
-    border: none;
+    border: 3px solid #3498db;
     margin: auto;
     
 }

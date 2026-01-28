@@ -193,3 +193,10 @@ details[open] summary::after {
   animation-iteration-count: infinite; 
   animation-iteration-count: 3;
 }
+/*memaksimalkan tampilan di perangkat mobile
+btn increment sepertinya masih harus di perlebar,
+perbaiki layoutnya,
+
+fitur redupkan layar saat berdzkir sepertinya menarik
+kita overlaykan saat hit target , overlay akan sukses berjalan.
+*/

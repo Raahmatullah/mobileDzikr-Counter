@@ -83,15 +83,18 @@ input {
 
 #incrementBtnEl { 
     font-size: 5rem; 
-    padding: 50px 50px 50px 50px;
+    border-radius: 50%;
     width: 100%; 
     max-width: 280px; 
+    background-color: transparent;
     right: 0;
     left: 0;
     top: 0;
     bottom: 0;
     position: fixed;
     top: 50px;
+    border: none;
+    margin: auto;
     
 }
 
@@ -107,7 +110,12 @@ input {
     width: 100%; 
     max-width: 280px; 
 }
-
+#resetBtnEl{
+    background-color: #e74c3c; 
+    color: white; 
+    border: none; 
+    margin-top: 150px;
+}
 details {
     width: 90% ;
     max-width: 340px;

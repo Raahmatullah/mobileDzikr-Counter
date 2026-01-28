@@ -3,26 +3,26 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f7fbff;
     height: 100vh;             
     margin: 0;
     display: flex;  
     flex-direction: column;          
     justify-content: center;    
     align-items: center;       
-    background-color: #f0f0f0; 
+    background-color: #f7fbff; 
 }
 
 h1 {
     text-align: center;
     margin: 20px 0;
     font-size: 2em;
-    color: #333333;
+    color: #0f1724;
 }
 
 .number {
     font-size: 1.2em;
-    color: #555555;
+    color: #0b2545;
     margin: 5px 0;
     text-align: center;
     margin: 0 auto;
@@ -35,10 +35,10 @@ h1 {
     max-width: 340px;
     margin:  0;
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(37,99,235,0.08);
     text-align: center;
     padding: 10px 10px 0 10px;
-    border: 3px solid #cfcaca;
+    border: 3px solid #dbeafe;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -52,18 +52,20 @@ input {
     font-size: 1rem;
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #cbd5e1;
     width: 100%;
     max-width: 280px;
     box-sizing: border-box;
     text-align: center;
+    color: #0b2545;
+    background-color: #fbfdff;
 }
 
 .toast {
     visibility: hidden;
     min-width: 200px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #059669;
+    color: #ffffff;
     text-align: center;
     border-radius: 6px;
     padding: 12px;
@@ -72,7 +74,7 @@ input {
     right: 30px;
     z-index: 1000;
     font-weight: bold;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(2,6,23,0.12);
     transition: visibility 0.3s, opacity 0.3s;
 }
 
@@ -93,9 +95,9 @@ input {
     bottom: 0;
     position: fixed;
     top: 50px;
-    border: 3px solid #3498db;
+    border: 3px solid #2563eb;
     margin: auto;
-    z-index: -1;
+   
 }
 
 .incrementBtn:active {
@@ -109,9 +111,12 @@ input {
     border-radius: 8px; 
     width: 100%; 
     max-width: 280px; 
+    color: #0f1724;
+    background-color: #e6f0ff;
+    border: 1px solid #cfe0ff;
 }
 #resetBtnEl{
-    background-color: #e74c3c; 
+    background-color: #ef4444; 
     color: white; 
     border: none; 
     margin-top: 150px;
@@ -119,17 +124,17 @@ input {
 details {
     width: 90% ;
     max-width: 340px;
-    border: 1px solid #bdc3c7;
+    border: 1px solid #d1e7f9;
     border-radius: 8px;
     padding: 8px 12px;
-    background: #ecf0f1;
+    background: #f3f9ff;
 } 
 
 summary { 
     cursor: pointer;
     font-weight: 600;
     list-style: none;
-    color: #2c3e50;
+    color: #0b2545;
 }
 
 summary::marker {
@@ -139,6 +144,7 @@ summary::after {
     content: "▾";
     float: right;
     transition: transform 0.2s ease;
+    color: #0b2545;
 } 
 
 details[open] summary::after { 
@@ -149,7 +155,7 @@ details[open] summary::after {
     overflow: hidden;
      scrollbar-width: none;
     margin-top: 20px;
-    border: 2px solid #ccc;
+    border: 2px solid #dbeafe;
     width: 100%;
     display: flex;
     gap: 10px;
@@ -166,7 +172,8 @@ details[open] summary::after {
     gap: 20px;
     width: min-content;
     height: 100%;
-    background: lightblue;
+    background: linear-gradient(135deg, #60a5fa, #7dd3fc);
+    color: #04263a;
     text-align: center;
     padding: 10px;
     scroll-snap-align: start;
@@ -186,8 +193,8 @@ details[open] summary::after {
 .shake {
   display: inline-block;
   animation: shake 0.2s;
-  border: 1px solid red;
-  background-color: rgba(255, 163, 163, 0.295);
+  border: 1px solid #ef4444;
+  background-color: rgba(239, 68, 68, 0.08);
   animation-iteration-count: infinite; 
   animation-iteration-count: 3;
 }

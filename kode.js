@@ -55,11 +55,7 @@ const globalscope = function () {
         klik.classList.add("shake");
     } else {
         pickname.classList.remove("shake");
-        const cards = document.createElement("div");
-        cards.classList.add("cards");
-        cards.textContent = `${dzikirInput.value}\n${counter}`;
-        document.getElementById("dzikirContainer").appendChild(cards);
-        cards.scrollIntoView({ behavior: "smooth", inline: "end" });
+        historyLogs();
         counter = 0;
         klik.textContent = counter;
         pickname.value = "";
@@ -68,3 +64,11 @@ const globalscope = function () {
 }
 
 addDzikirBtn.addEventListener("click", globalscope);
+
+historyLogs = function () {
+    const cards = document.createElement("div");
+        cards.classList.add("cards");
+        cards.textContent = `${dzikirInput.value}\n${counter}`;
+        document.getElementById("dzikirContainer").appendChild(cards);
+        cards.scrollIntoView({ behavior: "smooth", inline: "end" });
+}

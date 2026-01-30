@@ -1,4 +1,4 @@
-const klik = document.getElementById("incrementBtnEl");//click
+const klik = document.querySelector(".incrementBtnEl");//click
 const targetnow = document.getElementById("targetInput"); //target
 const pickname = document.getElementById("dzikirInput"); //naming
 const addDzikirBtn = document.getElementById("addDzikirBtn");//add

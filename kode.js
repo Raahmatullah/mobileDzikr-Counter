@@ -32,7 +32,7 @@ resetEL.addEventListener("click", function () {
 // target input ruling 
 klik.addEventListener("click", function () {
     const target = parseInt(targetnow.value, 10); // ubah ke number
-    if (!isNaN(target) && counter > target) {
+    if (!isNaN(target) && counter >= target) {
         showToast("🎯 Target Achieved!");
         ;
     }

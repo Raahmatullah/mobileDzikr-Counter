@@ -46,7 +46,9 @@ function showToast(message) {
         toast.classList.remove("show");
     }, 3000);
 }
-
+const tapFilter = function (event) {
+    
+};
 const globalscope = function () {
 
     if (dzikirInput.value === "") {

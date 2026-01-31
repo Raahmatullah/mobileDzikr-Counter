@@ -2,7 +2,7 @@ const klik = document.querySelector(".incrementBtnEl");//click
 const targetnow = document.getElementById("targetInput"); //target
 const pickname = document.getElementById("dzikirInput"); //naming
 const addDzikirBtn = document.getElementById("addDzikirBtn");//add
-
+const PicknameValue = pickname.value;
 
 let counter = 0;
 let clicked = false;

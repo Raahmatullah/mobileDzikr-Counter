@@ -14,7 +14,7 @@ klik.addEventListener("click", function () {
     if (clicked) {
         klik.classList.remove("shake");
         if (counter == targetnow.value) {
-            if (pickname.value === "") {
+            if (PicknameValue === "") {
                 pickname.classList.add("shake");
             } else {
                 globalscope();
@@ -58,7 +58,7 @@ const globalscope = function () {
         historyLogs();
         counter = 0;
         klik.textContent = counter;
-        pickname.value = "";
+        PicknameValue = "";
     }
 
 }

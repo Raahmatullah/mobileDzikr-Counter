@@ -46,15 +46,18 @@ function showToast(message) {
         toast.classList.remove("show");
     }, 3000);
 }
-const tapFilter = function (event) {
-    
-};
-const globalscope = function () {
 
+
+const tapFilter = function (e) {
+    if (e === 0) {
+        klik.classList.add("shake");
+    } 
+};
+
+const globalscope = function () {
+    tapFilter(klik);
     if (dzikirInput.value === "") {
         pickname.classList.add("shake");
-    } else if (counter === 0) {
-        klik.classList.add("shake");
     } else {
         pickname.classList.remove("shake");
         historyLogs();

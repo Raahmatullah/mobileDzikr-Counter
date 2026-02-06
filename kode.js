@@ -48,15 +48,9 @@ function showToast(message) {
 }
 
 
-const tapFilter = function (e) {
-    if (e === 0) {
-        klik.classList.add("shake");
-    } 
-};
 
 const globalscope = function () {
-    tapFilter(klik);
-    if (dzikirInput.value === "") {
+    if (PicknameValue === "") {
         pickname.classList.add("shake");
     } else {
         pickname.classList.remove("shake");

@@ -2,8 +2,8 @@ const klik = document.querySelector(".incrementBtnEl");//click
 const targetnow = document.getElementById("targetInput"); //target
 const pickname = document.getElementById("dzikirInput"); //naming
 const addDzikirBtn = document.getElementById("addDzikirBtn");//add
-const PicknameValue = pickname.value;
-const targetValue = targetnow.value;
+let PicknameValue = pickname.value;
+let targetValue = targetnow.value;
 let counter = 0;
 let clicked = false;
 //click button rules

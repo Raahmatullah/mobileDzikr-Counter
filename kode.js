@@ -81,5 +81,9 @@ historyLogs = function () {
         cards.textContent = `${dzikirInput.value}\n${counter}`;
         document.getElementById("dzikirContainer").appendChild(cards);
         cards.scrollIntoView({ behavior: "smooth", inline: "end" });
+        pickname.value = "";
+        pickname.classList.remove("shake");
+        pickname.focus();
+        picknameValue = "";
     }
 }

@@ -51,8 +51,9 @@ function showToast(message) {
 
 
 
-const globalscope = function () {
-    if (PicknameValue === ""||counter === 0) {
+const globalscope = function (e) {
+    e.preventDefault();
+    if (e === ""||e === 0) {
         pickname.classList.add("shake");
     } else {
         pickname.classList.remove("shake");
@@ -67,9 +68,18 @@ const globalscope = function () {
 addDzikirBtn.addEventListener("click", globalscope);
 
 historyLogs = function () {
+    if (counter === 0) {
+        klik.classList.add("shake");
+        return;
+    }else if (dzikirInput.value === "") {
+        pickname.classList.add("shake");
+        return;
+    }
+    else {
     const cards = document.createElement("div");
         cards.classList.add("cards");
         cards.textContent = `${dzikirInput.value}\n${counter}`;
         document.getElementById("dzikirContainer").appendChild(cards);
         cards.scrollIntoView({ behavior: "smooth", inline: "end" });
+    }
 }

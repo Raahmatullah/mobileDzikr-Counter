@@ -17,6 +17,7 @@ klik.addEventListener("click", function () {
             if (PicknameValue === "") {
                 pickname.classList.add("shake");
             } else {
+                pickname.classList.remove("shake");
                 globalscope();
             }
         }
@@ -49,8 +50,9 @@ function showToast(message) {
 
 
 
+
 const globalscope = function () {
-    if (PicknameValue === "") {
+    if (PicknameValue === ""||counter === 0) {
         pickname.classList.add("shake");
     } else {
         pickname.classList.remove("shake");

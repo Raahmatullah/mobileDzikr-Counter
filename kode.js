@@ -63,7 +63,7 @@ const globalscope = function (e) {
 
 }
 
-addDzikirBtn.addEventListener("click", globalscope);
+
 
 historyLogs = function () {
     if (counter === 0) {

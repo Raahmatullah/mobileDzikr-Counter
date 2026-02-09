@@ -58,7 +58,7 @@ const globalscope = function (e) {
         historyLogs();
         counter = 0;
         klik.textContent = counter;
-        PicknameValue = "";
+        pickname.value = "";
     }
 
 }
@@ -81,8 +81,8 @@ historyLogs = function () {
         cards.scrollIntoView({ behavior: "smooth", inline: "end" });
         pickname.classList.remove("shake");
         pickname.focus();
-        picknameValue = "";
-        targetValue = "";
+        pickname.value = "";
+        target.value = "";
 
     }
 }

@@ -54,7 +54,7 @@ function showToast(message) {
 const globalscope = function (e) {
     e.preventDefault();
     if (e === ""||e === 0) {
-        pickname.classList.add("shake");
+        e.classList.add("shake");
     } else {
         pickname.classList.remove("shake");
         historyLogs();
@@ -81,9 +81,10 @@ historyLogs = function () {
         cards.textContent = `${dzikirInput.value}\n${counter}`;
         document.getElementById("dzikirContainer").appendChild(cards);
         cards.scrollIntoView({ behavior: "smooth", inline: "end" });
-        pickname.value = "";
         pickname.classList.remove("shake");
         pickname.focus();
         picknameValue = "";
+        targetValue = "";
+
     }
 }

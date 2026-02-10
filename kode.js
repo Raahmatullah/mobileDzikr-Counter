@@ -4,20 +4,17 @@ const pickname = document.getElementById("dzikirInput"); //naming
 const addDzikirBtn = document.getElementById("addDzikirBtn");//add
 let counter = 0;
 let clicked = false;
+
 //click button rules
 klik.addEventListener("click", function () {
+    const target = parseInt(targetnow.value, 10);
     clicked = true;
     counter += 1
     klik.textContent = counter
     if (clicked) {
         klik.classList.remove("shake");
-        if (counter == targetnow.value) {
-            if (PicknameValue === "") {
-                pickname.classList.add("shake");
-            } else {
-                pickname.classList.remove("shake");
-                globalscope();
-            }
+        if (counter == target) {
+            globalscope(target);
         }
     }
 

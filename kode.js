@@ -28,14 +28,7 @@ resetEL.addEventListener("click", function () {
     counter = 0;
     klik.textContent = counter;
 });
-// target input ruling 
-klik.addEventListener("click", function () {
-    const target = parseInt(targetnow.value, 10); // ubah ke number
-    if (!isNaN(target) && counter >= target) {
-        showToast("🎯 Target Achieved!");
-        ;
-    }
-});
+
 
 function showToast(message) {
     const toast = document.getElementById("toast");
@@ -81,8 +74,8 @@ historyLogs = function () {
         cards.scrollIntoView({ behavior: "smooth", inline: "end" });
         pickname.classList.remove("shake");
         pickname.focus();
-        pickname.value = "";
-        target.value = "";
+        
+
 
     }
 }
